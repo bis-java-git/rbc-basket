@@ -2,12 +2,9 @@ package shopping.basket;
 
 import shopping.domain.Item;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class BasketItem implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class BasketItem  {
 
     private final Item item;
 

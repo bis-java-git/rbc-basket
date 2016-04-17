@@ -15,7 +15,7 @@ public class ShoppingBasket implements Serializable {
 
     public void addItem(final Item item) {
         for (BasketItem basketItem : items) {
-            if (basketItem.getItem().getName().equals(item.getName())) {
+            if (basketItem.getItem().getProduct().equals(item.getProduct())) {
                 basketItem.incrementQuantity();
                 return;
             }
