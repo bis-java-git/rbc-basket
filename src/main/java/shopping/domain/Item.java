@@ -1,23 +1,20 @@
 package shopping.domain;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 
-public final class Item implements Serializable {
+public final class Item {
 
-    private static final long serialVersionUID = 1L;
-
-    private final String name;
+    private final Product product;
 
     private final BigDecimal Price;
 
-    public Item(final String name, final BigDecimal price) {
-        this.name = name;
+    public Item(Product product, BigDecimal price) {
+        this.product = product;
         Price = price;
     }
 
-    public String getName() {
-        return name;
+    public Product getProduct() {
+        return product;
     }
 
     public BigDecimal getPrice() {

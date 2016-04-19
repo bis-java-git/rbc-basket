@@ -2,19 +2,16 @@ package shopping.basket;
 
 import shopping.domain.Item;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class BasketItem implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class BasketItem {
 
     private final Item item;
 
-    private Integer quantity =1;
+    private Integer quantity = 1;
 
-    public BasketItem(final Item item) {
-        this.item=item;
+    public BasketItem(Item item) {
+        this.item = item;
     }
 
     public void incrementQuantity() {
@@ -27,6 +24,10 @@ public class BasketItem implements Serializable {
 
     public Item getItem() {
         return item;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
     }
 
 }

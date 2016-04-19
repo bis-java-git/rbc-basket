@@ -8,7 +8,7 @@ import static junit.framework.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 
-public class BasketItemTest  extends BaseBasketTest{
+public class BasketItemTest extends BaseBasketTest {
 
     private final BasketItem basketItem = new BasketItem(banana);
 

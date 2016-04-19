@@ -1,7 +1,6 @@
 package shopping.basket;
 
 import org.junit.Test;
-import shopping.domain.Item;
 
 import java.math.BigDecimal;
 
@@ -10,8 +9,6 @@ import static junit.framework.Assert.assertEquals;
 public class ShoppingBasketTest extends BaseBasketTest {
 
     private final ShoppingBasket shoppingBasket = new ShoppingBasket();
-
-
 
     @Test
     public void addItemTest() {
